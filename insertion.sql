@@ -1,0 +1,81 @@
+USE company_management;
+
+INSERT INTO departments (department_name, location)
+VALUES
+('IT', 'Hyderabad'),
+('HR', 'Bangalore'),
+('Finance', 'Chennai'),
+('Sales', 'Mumbai'),
+('Marketing', 'Hyderabad'),
+('Customer Support', 'Hyderabad'),
+('Research and Development', 'Bangalore'),
+('Legal', 'Mumbai'),
+('Administration', 'Chennai');
+
+INSERT INTO employees
+(employee_name, email, salary, hire_date, department_id)
+VALUES
+('Rahul Sharma', 'rahul@gmail.com', 45000, '2022-01-15', 1),
+('Priya Reddy', 'priya@gmail.com', 55000, '2021-03-10', 1),
+('Arjun Kumar', 'arjun@gmail.com', 60000, '2020-06-20', 1),
+('Sneha Rao', 'sneha@gmail.com', 48000, '2023-02-12', 1),
+('Kiran Patel', 'kiran@gmail.com', 40000, '2022-07-18', 2),
+('Anjali Singh', 'anjali@gmail.com', 52000, '2021-11-25', 2),
+('Vikram Das', 'vikram@gmail.com', 58000, '2020-09-14', 2),
+('Rohit Verma', 'rohit@gmail.com', 42000, '2023-04-05', 3),
+('Pooja Mehta', 'pooja@gmail.com', 50000, '2022-08-19', 3),
+('Amit Gupta', 'amit@gmail.com', 65000, '2019-12-01', 3),
+('Suresh Naidu', 'suresh@gmail.com', 47000, '2021-05-22', 4),
+('Divya Nair', 'divya@gmail.com', 56000, '2022-10-11', 4),
+('Manoj Yadav', 'manoj@gmail.com', 39000, '2023-01-08', 4),
+('Neha Kapoor', 'neha@gmail.com', 62000, '2020-04-16', 5),
+('Varun Raju', 'varun@gmail.com', 45000, '2021-08-30', 5),
+('Swathi Jain', 'swathi@gmail.com', 53000, '2022-12-05', 5),
+('Ramesh Babu', 'ramesh@gmail.com', 41000, '2023-06-14', 6),
+('Meena Joshi', 'meena@gmail.com', 49000, '2021-02-28', 6),
+('Ajay Mishra', 'ajay@gmail.com', 57000, '2020-07-09', 6),
+('Nikhil Rao', 'nikhil@gmail.com', 68000, '2019-05-17', 7),
+('Kavya Reddy', 'kavya@gmail.com', 46000, '2022-03-21', 7),
+('Sanjay Kumar', 'sanjay@gmail.com', 54000, '2021-09-13', 7),
+('Harish Kumar', 'harish@gmail.com', 43000, '2023-07-25', 8),
+('Lavanya Devi', 'lavanya@gmail.com', 51000, '2022-05-06', 8),
+('Gopal Rao', 'gopal@gmail.com', 59000, '2020-11-18', 8),
+('Deepak Shah', 'deepak@gmail.com', 44000, '2023-03-15', 9),
+('Nandini Rao', 'nandini@gmail.com', 61000, '2021-06-27', 9),
+('Praveen Kumar', 'praveen@gmail.com', 50000, '2022-09-09', 9),
+('Sravani Reddy', 'sravani@gmail.com', 47000, '2023-08-12', 9),
+('Tarun Sharma', 'tarun@gmail.com', 55000, '2021-12-20', 9);
+
+INSERT INTO leave_requests
+(employee_id, leave_type, start_date, end_date, status, applied_date)
+VALUES
+(1, 'Casual Leave', '2025-01-10', '2025-01-11', 'Approved', '2025-01-05'),
+(2, 'Sick Leave', '2025-01-12', '2025-01-13', 'Approved', '2025-01-10'),
+(3, 'Annual Leave', '2025-01-15', '2025-01-18', 'Pending', '2025-01-08'),
+(4, 'Casual Leave', '2025-01-20', '2025-01-20', 'Rejected', '2025-01-15'),
+(5, 'Sick Leave', '2025-01-22', '2025-01-23', 'Approved', '2025-01-19'),
+(6, 'Annual Leave', '2025-02-01', '2025-02-05', 'Approved', '2025-01-20'),
+(7, 'Casual Leave', '2025-02-03', '2025-02-04', 'Pending', '2025-01-28'),
+(8, 'Sick Leave', '2025-02-06', '2025-02-06', 'Approved', '2025-02-04'),
+(9, 'Annual Leave', '2025-02-10', '2025-02-14', 'Rejected', '2025-02-01'),
+(10, 'Casual Leave', '2025-02-12', '2025-02-13', 'Approved', '2025-02-08'),
+(11, 'Sick Leave', '2025-02-15', '2025-02-16', 'Pending', '2025-02-12'),
+(12, 'Annual Leave', '2025-02-18', '2025-02-20', 'Approved', '2025-02-10'),
+(13, 'Casual Leave', '2025-02-22', '2025-02-22', 'Rejected', '2025-02-18'),
+(14, 'Sick Leave', '2025-03-01', '2025-03-02', 'Approved', '2025-02-27'),
+(15, 'Annual Leave', '2025-03-05', '2025-03-08', 'Pending', '2025-02-25'),
+(16, 'Casual Leave', '2025-03-10', '2025-03-11', 'Approved', '2025-03-04'),
+(17, 'Sick Leave', '2025-03-12', '2025-03-13', 'Rejected', '2025-03-09'),
+(18, 'Annual Leave', '2025-03-15', '2025-03-18', 'Approved', '2025-03-01'),
+(19, 'Casual Leave', '2025-03-20', '2025-03-20', 'Pending', '2025-03-15'),
+(20, 'Sick Leave', '2025-03-22', '2025-03-23', 'Approved', '2025-03-18'),
+(21, 'Annual Leave', '2025-04-01', '2025-04-05', 'Rejected', '2025-03-20'),
+(22, 'Casual Leave', '2025-04-03', '2025-04-04', 'Approved', '2025-03-29'),
+(23, 'Sick Leave', '2025-04-06', '2025-04-07', 'Pending', '2025-04-01'),
+(24, 'Annual Leave', '2025-04-10', '2025-04-12', 'Approved', '2025-04-02'),
+(25, 'Casual Leave', '2025-04-15', '2025-04-15', 'Rejected', '2025-04-10'),
+(26, 'Sick Leave', '2025-04-18', '2025-04-19', 'Approved', '2025-04-14'),
+(27, 'Annual Leave', '2025-04-20', '2025-04-24', 'Pending', '2025-04-12'),
+(28, 'Casual Leave', '2025-04-25', '2025-04-26', 'Approved', '2025-04-20'),
+(29, 'Sick Leave', '2025-04-28', '2025-04-29', 'Rejected', '2025-04-24'),
+(30, 'Annual Leave', '2025-05-01', '2025-05-05', 'Approved', '2025-04-20');
